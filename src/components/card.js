@@ -61,7 +61,7 @@ const Card = (article) => {
 // Append each card to the element in the DOM that matches the selector passed to the function.
 //
 const cardAppender = (selector) => {
-  axios.get(`http://localhost:5000/api/articles`).then((response) => {
+  axios.get(`https://localhost:5000/api/articles`).then((response) => {
     //better than for loop
     const keys = Object.values(response.data.articles);
     keys.forEach((array) => {
