@@ -27,11 +27,11 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Instructions
 
-- [ ] Navigate to the root of the project with your command line.
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
-- [ ] Run `npm start` to compile the project and serve it.
-- [ ] Navigate Chrome to `http://localhost:3000`
-- [ ] In a separate terminal, run `npm test` to run tests.
+- [ x] Navigate to the root of the project with your command line.
+- [ x] Run `npm install` to download the dependencies listed in the `package.json` file.
+- [x] Run `npm start` to compile the project and serve it.
+- [ x] Navigate Chrome to `http://localhost:3000`
+- [ x] In a separate terminal, run `npm test` to run tests.
 
 **Steps Required for MVP:**
 
@@ -68,5 +68,12 @@ Demonstrate your understanding of this week's concepts by answering the followin
    Any kind of interaction with the browser is an event. Each event is represented by an object that provides a lot of info about what happened and where. This is a part of a system that almost allows Javascript and the web to become self conscious and alive in a sense when combined with listeners.
 
 3. What is an event listener?
+
+   It is a function of the event target interface. It is a method that flows through the down in reaction to specific events it is listening for. I like to think of it as a sensor.
+
 4. Why would we convert a NodeList into an Array?
+
+   To be able to use higher order array functions on the data. From my understanding it essentially is an indexed ordered list tht can be accessed the same OTHER than being able to use these handy methods on.
+
 5. What is a component?
+   A component is a part of a whole. It is encapsulated code that on its own performs a function or purpose. It can be added as a component piece of a larger application and from my understanding it often is with React and applied JS. It makes code reusable, less prone to failure because it isn't being repeated and allows engineers to focus on architecture and functionality vs being bogged down zombie coding repetitively.
