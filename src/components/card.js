@@ -26,6 +26,27 @@ const Card = (article) => {
   //all tags
 
   card.classList.add("card");
+  headline.classList.add("headline");
+  author.classList.add("author");
+  imgContainer.classList.add("img-container");
+  //all classes
+
+  headline.textContent = article.headline;
+  image.src = article.authorPhoto;
+  image.alt = `this is the image of the author ${article.authorName}`;
+  span.textContent = `by ${article.authorName}`;
+  //content
+
+  card.appendChild(headline);
+  card.appendChild(author);
+  author.appendChild(imgContainer);
+  author.appendChild(span);
+  imgContainer.appendChild(image);
+
+  card.addEventListener("click", (event) => {
+    console.log(`${article["headline"]}`);
+  });
+  return card;
 };
 
 const cardAppender = (selector) => {
