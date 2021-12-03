@@ -10,10 +10,10 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [ x] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [x] Open the assignment in Canvas and click on the "Set up git" option.
+- [ x] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
+- [ x] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -50,7 +50,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
+- [ ] Submit via Codegrade by committing and pushing any new changes to the _main_ branch.
 - [ ] Check Codegrade for automated feedback.
 - [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
 - [ ] Any changes pushed after the deadline will not receive any feedback.
@@ -60,7 +60,13 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Demonstrate your understanding of this week's concepts by answering the following questions:
 
 1. What is the DOM?
+
+   Document object model. A virtual structure representing what will render in the browser in HTML. Javascript interacts with the dom as a representation of the nodes it is affecting.
+
 2. What is an event?
+
+   Any kind of interaction with the browser is an event. Each event is represented by an object that provides a lot of info about what happened and where. This is a part of a system that almost allows Javascript and the web to become self conscious and alive in a sense when combined with listeners.
+
 3. What is an event listener?
 4. Why would we convert a NodeList into an Array?
 5. What is a component?
