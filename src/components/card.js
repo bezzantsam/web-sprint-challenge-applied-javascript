@@ -15,6 +15,9 @@
 //     <span>By { authorName }</span>
 //   </div>
 // </div>
+
+import axios from "axios";
+
 //
 const Card = (article) => {
   const card = document.createElement("div");
@@ -49,15 +52,25 @@ const Card = (article) => {
   return card;
 };
 
+// TASK 6
+// ---------------------
+// Implement this function that takes a css selector as its only argument.
+// It should obtain articles from this endpoint: `http://localhost:5000/api/articles` (test it in Postman/HTTPie!).
+// However, the articles do not come organized in a single, neat array. Inspect the response closely!
+// Create a card from each and every article object in the response, using the Card component.
+// Append each card to the element in the DOM that matches the selector passed to the function.
+//
 const cardAppender = (selector) => {
-  // TASK 6
-  // ---------------------
-  // Implement this function that takes a css selector as its only argument.
-  // It should obtain articles from this endpoint: `http://localhost:5000/api/articles` (test it in Postman/HTTPie!).
-  // However, the articles do not come organized in a single, neat array. Inspect the response closely!
-  // Create a card from each and every article object in the response, using the Card component.
-  // Append each card to the element in the DOM that matches the selector passed to the function.
-  //
+  axios.get(`http://localhost:5000/api/articles`).then((response) => {
+    //better than for loop
+    const keys = Object.values(response.data.articles);
+    keys.forEach((array) => {
+      array.forEach((item) => {
+        const card = Card(item);
+        document.querySelector(selector).appendChild(card);
+      });
+    });
+  });
 };
 
 export { Card, cardAppender };
